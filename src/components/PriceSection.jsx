@@ -59,31 +59,49 @@ export default function PriceSection() {
           CLIQUE AQUI PARA ADQUIRIR JÁ!
         </button>
 
-        {/* BLOCO DA IMAGEM DO CELULAR */}
-        <div className="mt-10 flex justify-center">
-          <div className="relative w-full max-w-[900px] h-[260px] overflow-hidden">
-            <img
-              src={bgPrecoCurso}
-              alt=""
-              className="
-                absolute
-                bottom-[-100px]
-                left-1/2 -translate-x-1/2
-                w-full
-                object-cover
-              "
-            />
+         {/* BLOCO DA IMAGEM DO CELULAR */}
+        <div className="mt-6 lg:mt-10">
+          {/* MOBILE: recorte fechado só no celular */}
+          <div className="flex justify-center lg:hidden">
+            <div className="relative w-full max-w-sm h-48 overflow-hidden">
+              <img
+                src={bgPrecoCurso}
+                alt=""
+                className="
+                  absolute
+                  bottom-[-40px]
+                  left-1/2 -translate-x-1/2
+                  w-full
+                  object-cover
+                "
+              />
+            </div>
+          </div>
+          <div className="hidden lg:flex justify-center">
+            <div className="relative w-full max-w-[900px] h-[260px] overflow-hidden">
+              <img
+                src={bgPrecoCurso}
+                alt=""
+                className="
+                  absolute
+                  bottom-[-100px]
+                  left-1/2 -translate-x-1/2
+                  w-full
+                  object-cover
+                "
+              />
 
-            <div
-              className="
-                pointer-events-none
-                absolute top-0 left-0 right-0
-                h-1
-                bg-gradient-to-b
-                from-[#020508]
-                to-transparent
-              "
-            />
+              <div
+                className="
+                  pointer-events-none
+                  absolute top-0 left-0 right-0
+                  h-1
+                  bg-gradient-to-b
+                  from-[#020508]
+                  to-transparent
+                "
+              />
+            </div>
           </div>
         </div>
       </div>
